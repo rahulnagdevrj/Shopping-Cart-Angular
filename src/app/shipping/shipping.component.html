@@ -1,0 +1,6 @@
+<h3>Select Shipping Type</h3>
+
+<div class="shipping-item" *ngFor="let shipping of shippingcosts | async">
+  <span><input type="radio"> {{shipping.type}}</span>
+  <span>{{shipping.price | currency}}</span>
+</div>
